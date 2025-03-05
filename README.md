@@ -61,9 +61,9 @@ The IQR method is used to identify outliers:
 |----------|------|-------|----------|----------|----------|---------------|
 | XYZ      | 2025 | 3     | -0.12    | 0.45     | 0.78     | A Growth too low |
 
-## License
-This project is licensed under the MIT License.
 
-## Author
-[Hesameddin Khajei]
+##  Contact
+For questions or feedback, reach out at:
 
+- **Email**: [h.khajei@gmail.com](mailto\:.khajei@gmail.com)
+- **GitHub**: [hkhajei](https://github.com/hkhajei)
