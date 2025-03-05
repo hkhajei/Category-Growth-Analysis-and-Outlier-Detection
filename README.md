@@ -7,7 +7,7 @@ This project analyzes category-level month-over-month (MoM) growth trends and de
 - Reads sales data from an Excel file (`Sample data.xlsx`).
 - Aggregates data by `Category Group`, `Category`, `Year`, and `Month`.
 - Computes month-over-month growth rates (`A Growth`, `B Growth`, `C Growth`).
-- Detects outliers for the year 2025 based on historical data (2022-2024) using the interquartile range (IQR) method.
+- Detects outliers for the year 2025 based on historical data (2020-2024) using the interquartile range (IQR) method.
 - Exports detected outliers to `category_MoM_outliers_2025.csv`.
 - Generates visualizations comparing historical trends with 2025 projections and highlighting outliers.
 
@@ -44,7 +44,7 @@ grouped['A Growth'] = grouped.groupby(['Category Group','Category'])['A'].pct_ch
 
 ### 3. Outlier Detection
 The IQR method is used to identify outliers:
-- Compute Q1 (25th percentile) and Q3 (75th percentile) from historical data (2022-2024).
+- Compute Q1 (25th percentile) and Q3 (75th percentile) from historical data (2020-2024).
 - Calculate the lower and upper bounds:
   ```python
   lower_bound = Q1 - 1.5 * IQR
@@ -65,5 +65,5 @@ The IQR method is used to identify outliers:
 This project is licensed under the MIT License.
 
 ## Author
-[hkhajei]
+[Hesameddin Khajei]
 
